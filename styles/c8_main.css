@@ -87,8 +87,8 @@ header img {
     clear: both;
     display: block;
 }
-#mobile_menu {
-    display: none;
+.slicknav_menu {
+    display: none; 
 }
 @media screen and (max-width: 400px) {
     footer p {
@@ -115,7 +115,7 @@ header img {
         display: none; 
     }
     .slicknav_menu {
-        display: block;
+        display: block !important;
         background-color: #800000 !important;
     }
 }
