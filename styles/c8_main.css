@@ -111,23 +111,11 @@ header img {
     }
 }
 @media screen and (max-width: 768px) {
-    aside h2, section h2 {
-        font-size: 110%;
-    }
-    section h1 {
-        font-size: 125%;
-    }
-    aside h3 {
-        font-size: 85%;
-    }
-	#nav_menu {
-        display: none;
+    #nav_menu {
+        display: none; 
     }
     #mobile_menu {
-        display: block;
-    }
-    .slicknav_menu {
-        background-color: #800000 !important;
+        display: block; 
     }
 }
 /* the styles for the section */
