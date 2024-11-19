@@ -114,7 +114,7 @@ header img {
     #nav_menu {
         display: none; 
     }
-    #mobile_menu {
+    .slicknav_menu {
         display: block; 
     }
 }
