@@ -116,6 +116,8 @@ header img {
     }
     .slicknav_menu {
         display: block; 
+		background-color: #800000 !important;
+		color: white;
     }
 }
 /* the styles for the section */
