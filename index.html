@@ -34,12 +34,29 @@
     	</ul>
 	</nav>
 	<script>
-		$(document).ready(function(){
-			$('#nav_menu ul').slicknav({
-				prependTo: 'header',
-				label: '' 
-			});
-		});
+$(document).ready(function() {
+    if ($(window).width() < 768) {
+        $('#nav_menu').slicknav({
+            prependTo: '#header', 
+            label: '' 
+        });
+    }
+    $(window).resize(function() {
+        if ($(window).width() < 768) {
+            if (!$('#nav_menu').hasClass('slicknav-menu')) {
+                $('#nav_menu').slicknav({
+                    prependTo: '#header',
+                    label: ''
+                });
+            }
+        } else {
+            if ($('#nav_menu').hasClass('slicknav-menu')) {
+                $.slicknav.destroy();
+            }
+        }
+    });
+});
+
 	</script>
 	<main>
 		<section>
